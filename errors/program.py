@@ -4,13 +4,14 @@ capital=""
 lower=""
 symbols=""
 digits=""
-for i if text:
-    in i.islower():
+for i in text:
+    if i.islower():
         lower+=i
-    elseif i.isupper():
+    elif i.isupper():
         capital+=i
-    elseif i.isdigit():
+    elif i.isdigit():
         digits+=i
     else:
         symbols+=i
-print(capital,lower,symbols.strip(),digits,sep="\n")        #strip() removes the white spaces
+print('upper case: '+capital,'lower case: '+lower,'symbols: '+symbols.strip(),'digits: '+digits,sep="\n")
+#strip() removes the white spaces
