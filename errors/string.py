@@ -1,8 +1,10 @@
 #programs
 #sum of numbers in a string
+
 add=0
-txt="avinash123"
-for i is txt:
-    in i.isdigit():
+txt="ntn123hwr4ty4rdwa5"
+for i in txt:
+    if i.isdigit():
         add+=int(i)
-print(add)        
+print(add) 
+    
